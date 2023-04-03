@@ -19,6 +19,7 @@
             background-color: #bbb5ac;
         }
     </style>
+   
 </head>
 
 <body>
@@ -50,10 +51,14 @@
 
                 </div>
             </div>
-            <footer class="text-center">Copyright©2023   Letmalaga</footer>
+            <footer class="text-center">  <p id="year"></p> </footer>
         </div>
 
-
+        <script>
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById("year").innerHTML = "Copyright @ " + year + " Letmalaga";
+          </script>
 </body>
 
 </html>
